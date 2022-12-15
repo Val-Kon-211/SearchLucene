@@ -1,0 +1,10 @@
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\bin\Debug\netstandard2.1\SearchPro.deps.json
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\bin\Debug\netstandard2.1\SearchPro.dll
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\bin\Debug\netstandard2.1\SearchPro.pdb
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\obj\Debug\netstandard2.1\SearchPro.csproj.AssemblyReference.cache
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\obj\Debug\netstandard2.1\SearchPro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\obj\Debug\netstandard2.1\SearchPro.AssemblyInfoInputs.cache
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\obj\Debug\netstandard2.1\SearchPro.AssemblyInfo.cs
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\obj\Debug\netstandard2.1\SearchPro.csproj.CoreCompileInputs.cache
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\obj\Debug\netstandard2.1\SearchPro.dll
+C:\Users\konva\Documents\STUDY\Searching\SearchPro\obj\Debug\netstandard2.1\SearchPro.pdb
