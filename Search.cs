@@ -14,6 +14,7 @@ using Lucene.Net.Search.Similarities;
 using Lucene.Net.Search.Spell;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using Translit;
 
 namespace SearchPro
 {
@@ -67,9 +68,10 @@ namespace SearchPro
             IndexWriterConfig config = new IndexWriterConfig(luceneVersion, analyzer);
             spellChecker.IndexDictionary(new LuceneDictionary(reader, "text"), config, fullMerge: false);
 
-            string[] suggestions = spellChecker.SuggestSimilar(searchText, 4);
+            string[] suggestions = spellChecker.SuggestSimilar(searchText, 5);
             return suggestions;
         }
+
 
         static void Search_fun(string searchText, string[] searchFields, int maxSearchItems)
         {
@@ -119,7 +121,7 @@ namespace SearchPro
             }
         }
 
-        static void CreateAndSearchRu(string toSearch)
+        static void CreateAndSearch(string toSearch)
         {
             //Open the Directory using a Lucene Directory class
             string indexName = "game_index";
@@ -135,7 +137,11 @@ namespace SearchPro
 
         static void Main(string[] args)
         {
-            CreateAndSearchRu("Zelda Breath of the Wild 2");
+            Console.Write("Input request: ");
+            string request = Console.ReadLine();
+            TranslitMethods.Translitter trn = new TranslitMethods.Translitter();
+            request = trn.Translit(request, TranslitMethods.TranslitType.Gost);
+            CreateAndSearch(request);
             Console.ReadKey();
         }
     }
